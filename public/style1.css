@@ -1,0 +1,19 @@
+h1{
+    color: maroon;
+}
+
+.posts{
+    /* border: black 3px solid;
+    margin: 10px;
+    width:250px;
+    height: 250px; */
+    background-color: blanchedalmond;
+}
+.userName{
+    font-style: italic;
+}
+
+button{
+    display:flex;
+    color: red;
+}

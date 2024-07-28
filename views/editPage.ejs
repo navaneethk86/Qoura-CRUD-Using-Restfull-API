@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style1.css">
+</head>
+<body>
+    <h1>welcome to the edit page</h1>
+
+    <% for(post of searchData ){ %>
+        <div class="posts">
+            <h2 class="userName">user <%= post.name%></h2>
+            <p class="content">id: <%= post.id%></p>
+          
+           
+      
+
+                <form action="http://localhost:8080/posts/<%= post.id%>?_method=PATCH" method="post">
+                    <textarea type="text" placeholder="enter the content" name="postContent"> <%= post.postContent  %></textarea>
+                        <button>change</button>
+                </form>
+            </div>
+            <% } %>
+
+    
+</body>
+</html>
